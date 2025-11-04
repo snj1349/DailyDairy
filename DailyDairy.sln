@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DailyDairyDAL", "DailyDairy
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DailyDairyConsoleApp", "DailyDairyConsoleApp\DailyDairyConsoleApp.csproj", "{C3863952-CBAB-4BFF-947E-F3346E61AC71}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DailyDairyMVCApp", "DailyDairyMVCApp\DailyDairyMVCApp.csproj", "{FD9AE5F0-003F-4769-A24D-77D238185E86}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C3863952-CBAB-4BFF-947E-F3346E61AC71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3863952-CBAB-4BFF-947E-F3346E61AC71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3863952-CBAB-4BFF-947E-F3346E61AC71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD9AE5F0-003F-4769-A24D-77D238185E86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD9AE5F0-003F-4769-A24D-77D238185E86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD9AE5F0-003F-4769-A24D-77D238185E86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD9AE5F0-003F-4769-A24D-77D238185E86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

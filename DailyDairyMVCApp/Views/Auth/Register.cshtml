@@ -1,0 +1,36 @@
+@model DailyDairyDAL.Models.User
+@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row justify-content-center">
+	<div class="col-md-5">
+		<h3>Register</h3>
+		<form method="post">
+			<div class="mb-3">
+				<label class="form-label">Full Name</label>
+				<input asp-for="FullName" class="form-control" required />
+			</div>
+			<div class="mb-3">
+				<label class="form-label">Email</label>
+				<input asp-for="Email" class="form-control" type="email" required />
+			</div>
+			<div class="mb-3">
+				<label class="form-label">Password</label>
+				<input name="password" class="form-control" type="password" required />
+			</div>
+			<div class="mb-3">
+				<label class="form-label">Role</label>
+				<select asp-for="Role" class="form-select">
+					<option>Customer</option>
+					<option>Owner</option>
+					<option>Admin</option>
+				</select>
+			</div>
+			<button type="submit" class="btn btn-primary">Register</button>
+			<a href="/Auth/Login" class="btn btn-link">Back to Login</a>
+		</form>
+		<div class="text-danger">@Html.ValidationSummary()</div>
+	</div>
+</div>
+
+
