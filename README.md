@@ -1,38 +1,63 @@
-# 🧾 Daily Dairy Management System
+# 🧈 Daily Dairy Management System (ASP.NET Core MVC)
 
-## 🧠 Overview
-**DailyDairyMVCApp** is a complete **ASP.NET Core MVC** web application designed to help users manage their daily dairy shop records efficiently.  
-It uses **Entity Framework Core** for database operations, follows the **Repository Pattern**, and supports secure **user authentication** using session-based login.
+## 📘 Overview
+The **Daily Dairy Management System** is a web application built using **ASP.NET Core MVC** that helps manage daily milk and dairy product transactions for a local dairy shop.  
+It allows admins and users to efficiently record sales, purchases, customer data, and manage inventory with an integrated SQL database and Entity Framework Core (DAL layer).
 
 ---
 
-## 🏗️ Project Architecture
+## 📦 Quick Start
 
-This project follows a **3-Layer Architecture**:
+<div align="center">
 
-### 1️⃣ Database Layer (SQL Server)
-- **Database Name:** `DailyDairyDB`
-- Created using the SQL script: `DailyDairyDB.sql`
-- **Main Tables:**
-  - `Users`
-  - `DairyProducts`
-  - `Sales`
-  - `Customers`
-  - `Suppliers`
-  - `Orders`
-  - `Payments`
+```bash
+# Clone & Run
+git clone https://github.com/your-username/DailyDairy.git
+cd DailyDairy/DailyDairyMVCApp
+dotnet restore
+dotnet run
 
-### 2️⃣ Data Access Layer (EF Core)
-- **Project Name:** `DailyDairyDataAccessLayer`
-- Built using **Entity Framework Core (EF Core 8.0)**
-- Implements the **Repository Pattern** for clean and maintainable code.
+</div>
+## 🏗️ Project Structure
 
-**Common Repository Functions:**
-```csharp
-GetAll()
-GetById(int id)
-Add(entity)
-Update(entity)
-Delete(int id)
-SearchByName(string name)
-GetByDateRange(DateTime start, DateTime end)
+DailyDairy/
+│
+├── DailyDairyMVCApp/              # ASP.NET Core MVC Frontend
+│   ├── Controllers/               # MVC Controllers (Business Logic)
+│   ├── Models/                    # View Models / DTOs
+│   ├── Views/                     # Razor Views for UI
+│   ├── wwwroot/                   # Static assets (CSS, JS, Images)
+│   └── appsettings.json           # Configuration (DB Connection, etc.)
+│
+├── DailyDairy.DAL/                # Data Access Layer (EF Core)
+│   ├── Entities/                  # Database Entities
+│   ├── Repositories/              # Repositories for CRUD Operations
+│   └── DailyDairyDbContext.cs     # EF Core DbContext
+│
+├── DailyDairyDB.sql               # SQL Script for Database Schema
+│
+└── README.md                      # Project Documentation
+
+</div>
+
+## 🧩 Features
+
+- 🥛 Manage dairy products, customers, and transactions  
+- 🧾 Record daily milk collection and sales  
+- 📊 View reports and summaries  
+- 🔐 User authentication (Admin/User roles)  
+- ⚙️ Entity Framework Core (Code First + SQL Integration)  
+- 🎨 MVC architecture for clear separation of layers  
+
+---
+
+## 🛠️ Technologies Used
+
+| Layer | Technology |
+|-------|-------------|
+| **Frontend (UI)** | ASP.NET Core MVC, Razor Pages, Bootstrap |
+| **Backend (API + Logic)** | ASP.NET Core 8.0 |
+| **Database** | Microsoft SQL Server |
+| **ORM** | Entity Framework Core |
+| **Language** | C# |
+| **Version Control** | Git & GitHub |
